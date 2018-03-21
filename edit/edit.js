@@ -35,7 +35,7 @@ $(document).ready(function(){
 				
 				$.modalLink.open("https://app.dashpilot.com/remote/", {
 					method: "POST",
-					title: false,
+					title: "Edit",
 					data: {
 						page: get_page(),
 						fields,
