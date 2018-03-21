@@ -3,14 +3,15 @@
 <head>
   <title>A static website</title>
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="../assets/css/style.css" rel="stylesheet" />
   
-
-
   <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
+  
+  <div class="container">
   <!-- Add a menu:
    Log in / Sign up - when the user is not logged in
    Username / Log out - when the user is logged in
@@ -19,8 +20,10 @@
 
   <!-- Add a simpler button:
     Simple button that will open the modal.
-  -->
+  
   <div data-netlify-identity-button>Login with Netlify Identity</div>
+  -->
+  </div>  
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
