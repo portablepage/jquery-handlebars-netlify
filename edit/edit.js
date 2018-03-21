@@ -1,14 +1,10 @@
 $(document).ready(function(){
         var user = netlifyIdentity.currentUser();
-        console.log(user);
-});
+	console.log(user);
+	if(user!==null){
+		
+		$( document ).ajaxComplete(function() {
 
-
-
-$( document ).ajaxComplete(function() {
- 
-
-			
 			$('.edit')
 			  .mouseover(function() {
 				$(this).css('background-color', '#fffacd');
@@ -50,6 +46,11 @@ $( document ).ajaxComplete(function() {
 			
 			});
 			
+		});
+		
+	}
+	
+	
 });
 
 window.onmessage = function(event) {
@@ -64,7 +65,6 @@ window.onmessage = function(event) {
 
   }
 };
-
 
 /* jQuery Modal */
 
