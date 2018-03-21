@@ -17,5 +17,11 @@
     Simple button that will open the modal.
   -->
   <div data-netlify-identity-button>Login with Netlify Identity</div>
+  
+  <script>
+    const user = netlifyIdentity.currentUser();
+    console.log(user);
+  </script>
+  
 </body>
 </html>
