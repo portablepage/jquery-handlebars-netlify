@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>A static website</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- include the widget -->
   <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -19,8 +21,10 @@
   <div data-netlify-identity-button>Login with Netlify Identity</div>
   
   <script>
-    const user = window.netlifyIdentity.currentUser();
-    console.log(user);
+    $(document.ready(function(){
+        var user = netlifyIdentity.currentUser();
+        console.log(user);
+    });
   </script>
   
 </body>
